@@ -54,12 +54,6 @@ module.exports = ({ env }) => ({
 });
 ```
 
-**IMPORTANT:** With Strapi v4, you have to set `email.config.provider` to "strapi-provider-email-postmark", instead of "postmark". This is intended in Strapi v4: https://github.com/strapi/strapi/issues/11879.
-
-Additionally, the structure of `plugins.js` has changed:
-- In v3: `"email": {"provider": "", ...}`
-- In v4: `"email": {"config": {"provider": "", ...}}`
-
 ### Usage
 
 Call the `send` function on the email service, as you would for any strapi email service.
