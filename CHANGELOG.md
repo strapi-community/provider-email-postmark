@@ -5,9 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.0.0] - 2021-12-12
+## [5.0.1] - 2025-10-20
 
-### [4.0.0] Release
+- Upgrades to `strapi@5`
+- Upgrades to `postmark@4`
+- Removes `@strapi/utils` dependency
+- Remove v4 vs v3 readme instructions
+
+## [4.0.0] - 2021-12-12
 
 - Upgrades to `strapi@4.0.0`
 - Upgrades to `postmark@2.7.8`
@@ -18,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Only add `TemplateModel` to the message when we are using `templateId` or `templateAlias`, fixes https://github.com/ijsto/strapi-provider-email-postmark/issues/7
 
-### [3.4.1] Release
+## [3.4.1] Release
 
 - Updates version to latest Strapi core version
 - Implements 3.0.6, 3.0.7

@@ -1,6 +1,6 @@
 {
   "name": "@strapi-community/provider-email-postmark",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Strapi Email service provider for Postmark",
   "author": {
     "email": "scott.agirs@gmail.com",
@@ -10,9 +10,12 @@
     "lib": "./lib"
   },
   "main": "./lib",
+  "peerDependencies": {
+    "@strapi/strapi": "^5.0.0"
+  },
   "dependencies": {
-    "postmark": "^4.0.5",
-    "@strapi/utils": "^5.0.0"
+    "lodash.pickby": "^4.6.0",
+    "postmark": "^4.0.5"
   },
   "strapi": {
     "isProvider": true
