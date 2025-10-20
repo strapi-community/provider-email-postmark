@@ -1,19 +1,15 @@
-# strapi-provider-email-postmark
+# @strapi-community/provider-email-postmark
 
 [Strapi](http://strapi.io/) email service for [Postmark](https://postmarkapp.com/)
 
-# Prerequisites
-
-You will need to have the plugin `strapi-plugin-email` installed in you Strapi project.
-
 # Installation
 
-```
+```bash
 # using yarn
-yarn add strapi-provider-email-postmark
+yarn add @strapi-community/provider-email-postmark
 
 # using npm
-npm i strapi-provider-email-postmark
+npm i @strapi-community/provider-email-postmark
 ```
 
 # Configuration
@@ -39,7 +35,7 @@ module.exports = ({ env }) => ({
   // ...
   email: {
     config: {
-      provider: "strapi-provider-email-postmark",
+      provider: "@strapi-community/provider-email-postmark",
       providerOptions: {
         apiKey: "your-postmark-api-key",
       },
@@ -89,4 +85,4 @@ await strapi.plugins.email.services.email.send({
 
 # Licence
 
-- [MIT](https://github.com/ijsto/strapi-provider-email-postmark/blob/master/LICENSE.md)
+- [MIT](https://github.com/strapi-community/provider-email-postmark/blob/master/LICENSE.md)
